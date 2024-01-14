@@ -1,5 +1,9 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0px 0px 0px 0px;
 }
 
 header {
@@ -7,13 +11,17 @@ header {
     height: 100px;
     display: flex;
     align-items: center;
-
-    border: 1px solid red;
 }
 
 p {
     justify-self: left;
-    padding-left: 10px;
+
+    max-width: 28vw;
+}
+
+section {
+    width: 100vw;
+    height: auto;
 }
 
 nav {
@@ -33,13 +41,26 @@ ul {
 
 li {
     list-style-type: none;
-    padding: 15px;
     width: auto;
+}
+
+nav ul li {
+    padding: 15px;
+}
+
+.demosButton {
+    border: 1px solid black;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+
+    max-height: 20px;
+    padding: 15px;
 }
 
 .centeredDiv {
     margin: 0 auto;
-    width: 80vw;
+    width: 61%;
     justify-self: center;
 
     display: flex;
@@ -47,11 +68,8 @@ li {
     align-items: center;
 }
 
-.centeredDiv h1{
-    padding-left: 5vw;
-}
-
-.background{
+/* Mountain background */
+.background {
     background: fixed;
     background-image: url("src/hero.jpg");
     background-position: 0px -200px;
@@ -61,21 +79,116 @@ li {
     height: 550px;
 }
 
-.backgroundCenter{
+.backgroundCenter {
     padding-top: 4%;
-    width: 50vw;
+    width: 30vw;
     flex-direction: column;
 }
 
-.backgroundCenter h1{
+.backgroundCenter h1 {
     padding-left: 0;
     font-size: 350%;
-    text-align: center;
+    text-align: justify;
 }
 
-.backgroundCenter p{
+.backgroundCenter p {
     padding-left: 0;
     text-align: center;
     font-size: 100%;
     margin-top: 0px;
+}
+
+.projectInfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 32vh;
+}
+
+.projectInfo ul li {
+    text-align: center;
+    width: 33.3%;
+    height: 250px;
+    padding-top: 30px;
+
+    font-size: 115%;
+}
+
+.fa {
+    font-size: 2.5em;
+}
+
+.showcase {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+/* Showcase stuff */
+.showcase ul.showcase {
+    display: block;
+}
+
+.showcase li.showcase {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/* Rows itself */
+.showcase li:nth-child(1) {
+    background-color: #ECECEC;
+}
+
+.showcase li:nth-child(3) {
+    background-color: #000000;
+}
+
+/* Centered divs */
+.showcase li:nth-child(2) .centeredDiv {
+    flex-direction: row-reverse;
+}
+
+.showcase li:nth-child(3) .centeredDiv {
+    color: #FFFFFF;
+}
+
+.learnMoreButton {
+    background-color: #FCB03B;
+    color: #14161B;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-right: 10px;
+    font-weight: bold;
+
+    max-height: 20px;
+    padding: 15px;
+}
+
+li img {
+    height: 95%;
+    width: auto;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.showcaseTextDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-self: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: auto;
+    height: auto;
 }
