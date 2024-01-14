@@ -37,6 +37,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding-left: 0px;
 }
 
 li {
@@ -46,8 +47,26 @@ li {
 
 nav ul li {
     padding: 15px;
+    font-weight: bold;
 }
 
+
+li img {
+    height: 95%;
+    width: auto;
+}
+
+footer{
+    width: 100%;
+    height: 50px;
+    background-color: #14161B;
+    color: #FFFFFF;
+
+    line-height: 50px;
+}
+
+
+/* Buttons */
 .demosButton {
     border: 1px solid black;
     padding-left: 25px;
@@ -72,7 +91,7 @@ nav ul li {
 .background {
     background: fixed;
     background-image: url("src/hero.jpg");
-    background-position: 0px -200px;
+    background-position: 0px -270px;
     background-repeat: round;
 
     width: 100%;
@@ -96,6 +115,8 @@ nav ul li {
     text-align: center;
     font-size: 100%;
     margin-top: 0px;
+
+    max-width: 29vw;
 }
 
 .projectInfo {
@@ -167,16 +188,6 @@ nav ul li {
     max-height: 20px;
     padding: 15px;
 }
-
-li img {
-    height: 95%;
-    width: auto;
-}
-
-ul {
-    padding-left: 0px;
-}
-
 .showcaseTextDiv {
     display: flex;
     flex-direction: column;
@@ -191,4 +202,114 @@ ul {
 
     width: auto;
     height: auto;
+}
+
+/* Featured work */
+.featuredWork{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    text-align: left;
+    flex-wrap: wrap;
+}
+
+.featuredWork .centeredDiv{
+    flex-direction: column;
+}
+
+.featuredWork h2{
+    width: 100%;
+    text-align: left;
+}
+
+.featuredWork ul.featuredWork {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.featuredWork li.featuredWork {
+    width: 100%;
+}
+
+/* Reviews */
+.reviews{
+    background-color: #ECECEC;
+    height: fit-content;
+}
+
+.reviews div{
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.reviews li.reviews {
+    width: 33.3%;
+}
+
+.reviews div p{
+    font-size: 90%;
+    max-width: 80%;
+}
+
+.reviews img{
+    width: 18%;
+    height: auto;
+    border-radius: 50px;
+}
+
+/* Webproject */
+.webProject{
+    width: 100%;
+    height: 550px;
+
+    background-color: #14161B;
+
+    flex-direction: column;
+    justify-content: center;
+
+    font-size: 110%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.webProject h1{
+    font-size: 180%;
+    width: 25vw;
+    height: auto;
+    margin: 0 0;
+}
+
+.webProject p{
+    max-width: 40vw;
+    height: auto;
+}
+
+/* Reply */
+.reply{
+    width: 100%;
+    height: 150px;
+
+}
+
+.reply h4{
+    padding-top: 1%;
+    padding-left: 3%;
+    height: auto;
+}
+
+.reply div{
+    width: 61%;
+    flex-direction: column;
+    align-items: normal;
+}
+
+.reply p{
+    text-align: left;
+    padding-left: 3%;
+    margin-top: 0px;
 }
