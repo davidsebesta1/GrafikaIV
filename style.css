@@ -3,14 +3,16 @@
 }
 
 body {
+    width: 99.2vw;
     margin: 0px 0px 0px 0px;
 }
 
 header {
     width: 100%;
-    height: 100px;
+    height: 10vh;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 p {
@@ -56,7 +58,7 @@ li img {
     width: auto;
 }
 
-footer{
+footer {
     width: 100%;
     height: 50px;
     background-color: #14161B;
@@ -87,11 +89,15 @@ footer{
     align-items: center;
 }
 
+.burgerMenu {
+    display: none;
+}
+
 /* Mountain background */
 .background {
     background: fixed;
     background-image: url("src/hero.jpg");
-    background-position: 0px -270px;
+    background-position: 0px -290px;
     background-repeat: round;
 
     width: 100%;
@@ -119,6 +125,7 @@ footer{
     max-width: 29vw;
 }
 
+/* Project Info */
 .projectInfo {
     margin-left: auto;
     margin-right: auto;
@@ -137,6 +144,12 @@ footer{
 
 .fa {
     font-size: 2.5em;
+}
+
+.projectInfo ul li p {
+    text-align: center;
+    max-width: 20vw;
+    margin: 0 auto;
 }
 
 .showcase {
@@ -188,6 +201,7 @@ footer{
     max-height: 20px;
     padding: 15px;
 }
+
 .showcaseTextDiv {
     display: flex;
     flex-direction: column;
@@ -205,7 +219,7 @@ footer{
 }
 
 /* Featured work */
-.featuredWork{
+.featuredWork {
     width: 100%;
     height: auto;
 
@@ -214,11 +228,11 @@ footer{
     flex-wrap: wrap;
 }
 
-.featuredWork .centeredDiv{
+.featuredWork .centeredDiv {
     flex-direction: column;
 }
 
-.featuredWork h2{
+.featuredWork h2 {
     width: 100%;
     text-align: left;
 }
@@ -236,12 +250,12 @@ footer{
 }
 
 /* Reviews */
-.reviews{
+.reviews {
     background-color: #ECECEC;
     height: fit-content;
 }
 
-.reviews div{
+.reviews div {
     display: flex;
     flex-direction: column;
     float: left;
@@ -251,19 +265,19 @@ footer{
     width: 33.3%;
 }
 
-.reviews div p{
+.reviews div p {
     font-size: 90%;
     max-width: 80%;
 }
 
-.reviews img{
+.reviews img {
     width: 18%;
     height: auto;
     border-radius: 50px;
 }
 
 /* Webproject */
-.webProject{
+.webProject {
     width: 100%;
     height: 550px;
 
@@ -277,39 +291,241 @@ footer{
     color: #FFFFFF;
 }
 
-.webProject h1{
+.webProject h1 {
     font-size: 180%;
     width: 25vw;
     height: auto;
     margin: 0 0;
 }
 
-.webProject p{
+.webProject p {
     max-width: 40vw;
     height: auto;
 }
 
 /* Reply */
-.reply{
+.reply {
     width: 100%;
     height: 150px;
 
 }
 
-.reply h4{
+.reply h4 {
     padding-top: 1%;
     padding-left: 3%;
     height: auto;
 }
 
-.reply div{
+.reply div {
     width: 61%;
     flex-direction: column;
     align-items: normal;
 }
 
-.reply p{
+.reply p {
     text-align: left;
     padding-left: 3%;
     margin-top: 0px;
+}
+
+@media only screen and (max-width: 320px) {
+    header {
+        height: 20vh;
+    }
+
+    header section h1{
+        padding-left: 10px;
+        font-size: 120%;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .burgerMenu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid #14161B;
+
+        width: 12vw;
+        padding: 5px;
+
+        margin-right: 20px;
+    }
+
+    .fa {
+        font-size: 1.5em;
+    }
+
+    .centeredDiv {
+        width: 98%;
+    }
+
+    * {
+        font-size: 100%;
+    }
+
+    .backgroundCenter h1 {
+        font-size: 120%;
+        width: 50%;
+        text-align: center;
+    }
+
+    .backgroundCenter {
+        width: 95vw;
+    }
+
+    .backgroundCenter p {
+        max-width: 80vw;
+    }
+
+    .learnMoreButton {
+        font-size: 95%;
+    }
+
+    .demosButton {
+        font-size: 95%;
+    }
+
+    .background {
+        height: 360px;
+        background-position: -150px -65px;
+        background-size: 1366px 500px;
+    }
+
+    .backgroundCenter {
+        background-color: #ECECEC;
+        width: 100vw;
+    }
+
+    .projectInfo {
+        height: 120vh;
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    .projectInfo ul {
+        display: flex;
+    }
+
+    .projectInfo ul li {
+        width: 100%;
+        height: 33.3%;
+        padding-bottom: 5px;
+        padding-top: 15px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        margin-top: 0px;
+    }
+
+    .projectInfo ul li p {
+        text-align: center;
+        max-width: 100vw;
+        margin: 0 auto;
+        font-size: 90%;
+    }
+
+    .projectInfo:nth-child(2) p {
+        display: none;
+    }
+
+    .image-container {
+        height: 25%;
+        width: 97vw;
+        overflow: hidden;
+    }
+
+    .image-container img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .showcase {
+        flex-direction: column;
+    }
+
+    .showcase .li.showcase .centeredDiv {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .showcaseTextDiv p,
+    h2 {
+        max-width: 100vw;
+        padding-right: 10vw;
+        padding-left: 1.5vw;
+    }
+
+    .showcaseTextDiv h2 {
+        font-size: 150%;
+        margin-bottom: 0px;
+    }
+
+    .showcaseTextDiv .learnMoreButton {
+        margin-left: 1.5vw;
+    }
+
+    .showcase li:nth-child(2) .centeredDiv {
+        flex-direction: column-reverse !important;
+    }
+
+    .showcase li:nth-child(2) .image-container {
+        padding-top: 15px;
+    }
+
+    .featuredWork h2 {
+        width: 90%;
+        font-size: 150%;
+    }
+
+    .featuredWork{
+        flex-direction: column;
+    }
+
+    .featuredWork ul.featuredWork{
+        flex-direction: column;
+    }
+
+    .featuredWork li.featuredWork{
+        padding-bottom: 20px;
+    }
+
+    .reviews li.reviews{
+        width: 100%;
+    }
+
+    .webProject{
+        height: 350px;
+    }
+
+    .webProject h1{
+        width: 100vw;
+        font-size: 120%;
+    }
+
+    .webProject p{
+        max-width: 100vw;
+        font-size: 90%;
+    }
+
+    .reply div{
+        width: 95%;
+    }
+
+    footer .centeredDiv{
+        width: 95%;
+    }
+
+    .reply p{
+        max-width: 90vw;
+    }
+
+    .webProject .learnMoreButton{
+        padding: 15px;
+        font-size: 65%;
+    }
 }
