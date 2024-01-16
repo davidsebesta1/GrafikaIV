@@ -106,14 +106,15 @@ footer {
 
 .backgroundCenter {
     padding-top: 4%;
-    width: 30vw;
+    width: 45vw;
     flex-direction: column;
 }
 
 .backgroundCenter h1 {
     padding-left: 0;
     font-size: 350%;
-    text-align: justify;
+    text-align: center;
+    width: 50vw;
 }
 
 .backgroundCenter p {
@@ -121,8 +122,9 @@ footer {
     text-align: center;
     font-size: 100%;
     margin-top: 0px;
+    padding-top: 0px;
 
-    max-width: 29vw;
+    max-width: 45vw;
 }
 
 /* Project Info */
@@ -211,7 +213,7 @@ footer {
     align-items: flex-start;
     align-self: center;
 
-    margin-left: auto;
+    margin-left: 1vw;
     margin-right: auto;
 
     width: auto;
@@ -259,6 +261,10 @@ footer {
     display: flex;
     flex-direction: column;
     float: left;
+}
+
+.reviews ul{
+    width: 100%;
 }
 
 .reviews li.reviews {
