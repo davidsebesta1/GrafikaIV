@@ -116,6 +116,7 @@ footer {
 
 .backgroundCenter {
     padding-top: 4%;
+    width: 45vw;
     flex-direction: column;
 }
 
@@ -131,9 +132,10 @@ footer {
     text-align: center;
     font-size: 100%;
     margin-top: 0px;
+    padding-top: 0px;
 
     padding-top: 0%;
-    max-width: 29vw;
+    max-width: 45vw;
 }
 
 .background .centeredDiv {
@@ -226,7 +228,7 @@ footer {
     align-items: flex-start;
     align-self: center;
 
-    margin-left: auto;
+    margin-left: 1vw;
     margin-right: auto;
 
     width: auto;
@@ -275,6 +277,10 @@ footer {
     display: flex;
     flex-direction: column;
     float: left;
+}
+
+.reviews ul{
+    width: 100%;
 }
 
 .reviews li.reviews {
